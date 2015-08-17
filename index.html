@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
+<title>eFidyah</title>
 <link rel="stylesheet" type="text/css" href="calendarPage.css">
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <a href="calendarPage.php">Untitled Document</a>
 <link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
@@ -13,7 +16,7 @@
 
 <div data-role="page" id="page">
 	<div data-role="header">
-		<h1>calendar</h1>
+		<h1>e-Fidyah</h1>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
@@ -28,10 +31,58 @@
 <div data-role="page" id="calendar">
 	<div data-role="header">
 		<h1>Kalendar</h1>
+		<a href="#page" data-role="button" data-icon="back">Menu</a>
+
+
 	</div>
 	<div data-role="content">	
-<iframe src="http://www.islamicfinder.org/calendar_service.php?base=g&lang=" frameborder=0 width=180 height=270 marginwidth=0 marginheight=0 scrolling="no"> </iframe>
-	
+<iframe src="https://www.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3pcb9ulsg9ovftkd26ggp41u9o%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="230" height="400" frameborder="0" scrolling="no"></iframe>
+<!--
+<table width="200" border="2">
+  <tr>
+    <td><h3>1</h3><input type="checkbox" name="1"/></td>
+    <td><h3>2</h3><input type="checkbox" name="2"/></td>
+    <td><h3>3</h3><input type="checkbox" name="3"/></td>
+    <td><h3>4</h3><input type="checkbox" name="4"/></td>
+    <td><h3>5</h3><input type="checkbox" name="5"/></td>
+    <td><h3>6</h3><input type="checkbox" name="6"/></td>
+    <td><h3>7</h3><input type="checkbox" name="7"/></td>
+  </tr>
+  <tr>
+    <td><h3>8</h3><input type="checkbox" name="8"/></td>
+    <td><h3>9</h3><input type="checkbox" name="9"/></td>
+    <td><h3>10</h3><input type="checkbox" name="10"/></td>
+    <td><h3>11</h3><input type="checkbox" name="11"/></td>
+    <td><h3>12</h3><input type="checkbox" name="12"/></td>
+    <td><h3>13</h3><input type="checkbox" name="13"/></td>
+    <td><h3>14</h3><input type="checkbox" name="14"/></td>
+  </tr>
+  <tr>
+    <td><h3>15</h3><input type="checkbox" name="15"/></td>
+    <td><h3>16</h3><input type="checkbox" name="16"/></td>
+    <td><h3>17</h3><input type="checkbox" name="17"/></td>
+    <td><h3>18</h3><input type="checkbox" name="18"/></td>
+    <td><h3>19</h3><input type="checkbox" name="19"/></td>
+    <td><h3>20</h3><input type="checkbox" name="20"/></td>
+    <td><h3>21</h3><input type="checkbox" name="21"/></td>
+  </tr>
+  <tr>
+    <td><h3>22</h3><input type="checkbox" name="22"/></td>
+    <td><h3>23</h3><input type="checkbox" name="23"/></td>
+    <td><h3>24</h3><input type="checkbox" name="24"/></td>
+    <td><h3>25</h3><input type="checkbox" name="25"/></td>
+    <td><h3>26</h3><input type="checkbox" name="26"/></td>
+    <td><h3>27</h3><input type="checkbox" name="27"/></td>
+    <td><h3>28</h3><input type="checkbox" name="28"/></td>
+  </tr>
+  <tr>
+    <td><h3>29</h3><input type="checkbox" name="29"/></td>
+    <td><h3>30</h3><input type="checkbox" name="30"/></td>
+    
+  </tr>
+  
+</table>
+-->
     </div>
 	
 </div>
@@ -40,6 +91,7 @@
 <div data-role="page" id="tetapan">
 	<div data-role="header">
 		<h1>tetapan</h1>
+		<a href="#page" data-role="button" data-icon="back">home</a>
   </div>
 	<div data-role="content">	
 		<ul data-role="listview">
@@ -64,6 +116,8 @@
 <div data-role="page" id="lokasi">
 <div data-role="header">
 <h1>lokasi</h1>
+<a href="#tetapan" data-role="button" data-icon="back" data-iconpos="right">Lokasi</a>
+<a href="#page" data-role="button" data-icon="home" data-iconpos="left">home</a>
 </div>
 <div data-role="content">
  <ul data-role="listview">
@@ -74,18 +128,32 @@
 </div>
 
 <div data-role="page" id="kul">
+<div data-role="header">
+<h1>Kuala Lumpur </h1>
+<a href="#lokasi" data-role="button" data-icon="back" data-iconpos="right">Lokasi</a>
+<a href="#page" data-role="button" data-icon="home" data-iconpos="left">home</a>
+
+</div>
 <div data-role="content">
 <iframe src="http://www.islamicfinder.org/prayer_service.php?country=malaysia&city=kuala_lumpur&state=14&zipcode=&latitude=3.1667&longitude=101.7000&timezone=8&HanfiShafi=1&pmethod=1&fajrTwilight1=10&fajrTwilight2=10&ishaTwilight=10&ishaInterval=30&dhuhrInterval=1&maghribInterval=1&dayLight=0&page_background=&table_background=&table_lines=&text_color=&link_color=&prayerFajr=&prayerSunrise=&prayerDhuhr=&prayerAsr=&prayerMaghrib=&prayerIsha=&lang=" frameborder=0 width=175 height=280 marginwidth=0 marginheight=0 scrolling="no"> </iframe>
 </div>
 </div>
 
 <div data-role="page" id="als">
+<div data-role="header">
+<h1>Alor Setar</h1>
+<a href="#lokasi" data-role="button" data-icon="back" data-iconpos="right">Lokasi</a>
+<a href="#page" data-role="button" data-icon="home" data-iconpos="left">home</a>
 <div data-role="content">
 <iframe src="http://www.islamicfinder.org/prayer_service.php?country=malaysia&city=alor_star&state=02&zipcode=&latitude=6.1167&longitude=100.3667&timezone=8&HanfiShafi=1&pmethod=1&fajrTwilight1=10&fajrTwilight2=10&ishaTwilight=10&ishaInterval=30&dhuhrInterval=1&maghribInterval=1&dayLight=0&page_background=&table_background=&table_lines=&text_color=&link_color=&prayerFajr=&prayerSunrise=&prayerDhuhr=&prayerAsr=&prayerMaghrib=&prayerIsha=&lang=" frameborder=0 width=175 height=280 marginwidth=0 marginheight=0 scrolling="no"> </iframe>
 </div>
 </div>
 
 <div data-role="page" id="jbr">
+<div data-role="header">
+<h1>Johor Bharu </h1>
+<a href="#lokasi" data-role="button" data-icon="back" data-iconpos="right">Lokasi</a>
+<a href="#page" data-role="button" data-icon="home" data-iconpos="left">home</a>
 <div data-role="content">
 <iframe src="http://www.islamicfinder.org/prayer_service.php?country=malaysia&city=johor_bahru&state=01&zipcode=&latitude=1.4667&longitude=103.7500&timezone=8&HanfiShafi=1&pmethod=1&fajrTwilight1=10&fajrTwilight2=10&ishaTwilight=10&ishaInterval=30&dhuhrInterval=1&maghribInterval=1&dayLight=0&page_background=&table_background=&table_lines=&text_color=&link_color=&prayerFajr=&prayerSunrise=&prayerDhuhr=&prayerAsr=&prayerMaghrib=&prayerIsha=&lang=" frameborder=0 width=175 height=280 marginwidth=0 marginheight=0 scrolling="no"> </iframe>
 </div>
